@@ -1,0 +1,295 @@
+.toggle-holder
+{
+    padding: 20px 0 0 0;
+
+    text-align: left;
+
+    @include breakpoint(large)
+    {
+        display: none;
+    }
+}
+
+.main-navigation.toggled .nav-menu
+{
+    display: block;
+
+    @include breakpoint(large)
+    {
+        display: block;
+
+        margin: 0;
+        padding: 0;
+
+        border-bottom: 0;
+    }
+}
+
+.main-navigation
+{
+    display: block;
+
+    padding: 0;
+
+    background-color: transparent;
+}
+
+.main-navigation ul
+{
+    display: none;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    list-style-position: inside;
+
+    text-align: left;
+}
+
+.main-navigation ul li
+{
+    display: block;
+
+    margin: 0;
+    padding: 0;
+
+    text-indent: 0;
+}
+
+.main-navigation a:link,
+.main-navigation a:visited
+{
+    display: block;
+
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus,
+.main-navigation a:active
+{
+    display: block;
+
+    text-decoration: none;
+
+    outline-offset: -2px;
+    background-color: $color__secondary-background-color;
+}
+
+.main-navigation a:active
+{
+    outline: dotted 1px $color__black;
+}
+
+.main-navigation ul ul
+{
+    display: block;
+
+    list-style: none;
+}
+
+.main-navigation ul a
+{
+    padding: .5em 0 .5em .5em;
+}
+
+.main-navigation ul ul a
+{
+    padding: .5em 0 .5em 1em;
+}
+
+ul ul ul a
+{
+    padding: .5em 0 .5em 2em;
+}
+
+.main-navigation ul ul ul ul a
+{
+    padding: .5em 0 .5em 3em;
+}
+
+.main-navigation ul ul ul ul ul a
+{
+    padding: .5em 0 .5em 4em;
+}
+
+.main-navigation ul ul ul ul ul ul a
+{
+    padding: .5em 0 .5em 5em;
+}
+
+.main-navigation ul ul ul
+{
+    margin-bottom: 0;
+}
+
+.main-navigation li.current_page_item > a,
+.main-navigation li.current-menu-item > a,
+.main-navigation li.current_page_ancestor > a
+{
+    cursor: default;
+    text-decoration: none;
+
+    color: $color__link-color;
+    background-color: $color__secondary-background-color;
+}
+
+@include breakpoint(large)
+{
+    .main-navigation ul
+    {
+        display: block;
+
+        list-style: none;
+
+        text-align: left;
+    }
+
+    .main-navigation ul ul a,
+    .main-navigation ul ul ul a,
+    .main-navigation ul ul ul ul a,
+    .main-navigation ul ul ul ul ul a,
+    .main-navigation ul ul ul ul ul ul a
+    {
+        padding-left: 1.25em;
+
+        background-color: $color__primary-background-color;
+    }
+
+    .main-navigation ul li
+    {
+        position: relative;
+
+        display: inline-block;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-navigation ul li:last-child
+    {
+        margin: 0;
+    }
+
+    .main-navigation ul a
+    {
+        display: inline-block;
+
+        padding: .5em .75em;
+
+        text-decoration: none;
+    }
+
+    .main-navigation a:link,
+    .main-navigation a:visited
+    {
+        display: block;
+
+        letter-spacing: 1px;
+    }
+
+    .main-navigation a:hover,
+    .main-navigation a:focus,
+    .main-navigation a:active
+    {
+        outline-offset: -2px;
+    }
+
+    .main-navigation a:active
+    {
+        outline: dotted 1px $color__black;
+    }
+
+    .main-navigation ul ul
+    {
+        position: absolute;
+        z-index: 99999;
+        left: -999em;
+
+        display: block;
+
+        margin: 0;
+
+        border: solid 1px $color__border-color;
+        background-color: $color__primary-background-color;
+    }
+
+    .main-navigation ul ul li a
+    {
+        border: none;
+    }
+
+    .main-navigation ul ul ul
+    {
+        top: 0;
+        left: -999em;
+
+        margin-top: 0;
+    }
+
+    .main-navigation ul li:first-child:hover > ul,
+    .main-navigation ul li:first-child.focus > ul
+    {
+        left: 0;
+    }
+
+    .main-navigation ul li:hover > ul,
+    .main-navigation ul li.focus > ul
+    {
+        left: 0;
+    }
+
+    .main-navigation ul li:hover > ul ul,
+    .main-navigation ul li.focus > ul ul
+    {
+        left: -99999em;
+    }
+
+    .main-navigation ul ul li:hover > ul,
+    .main-navigation ul ul li.focus > ul,
+    .main-navigation ul ul li:first-child:hover > ul,
+    .main-navigation ul ul li:first-child.focus > ul
+    {
+        left: 100%;
+    }
+
+    .main-navigation ul ul li
+    {
+        padding: 0;
+
+        text-align: left;
+    }
+
+    .main-navigation ul ul a
+    {
+        display: block;
+
+        width: 210px;
+        padding: .5em .75em;
+
+        border: none;
+    }
+
+    .main-navigation ul ul ul
+    {
+        top: -1px;
+        left: 100%;
+    }
+}
+
+li.search
+{
+    float: right;
+
+    width: 100%;
+}
+
+@include breakpoint(large)
+{
+	li.search .search-form
+	{
+		display: none;
+	}
+}

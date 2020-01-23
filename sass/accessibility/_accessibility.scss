@@ -1,0 +1,50 @@
+.screen-reader-text
+{
+    position: absolute !important;
+
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    word-wrap: normal !important;
+
+    border: 0;
+
+    clip-path: inset(50%);
+}
+
+.screen-reader-text:focus
+{
+    font-weight: 700;
+    line-height: normal;
+
+    z-index: 100000;
+    top: 5px;
+    left: 5px;
+
+    display: block;
+    clip: auto !important;
+
+    width: auto;
+    height: auto;
+    padding: 15px 23px 14px 23px;
+
+    text-decoration: none;
+
+    color: $color__link-color;
+    background-color: $color__secondary-background-color;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .6);
+
+    clip-path: none;
+    @include font-size(.875);
+    @include border-radius(3px);
+}
+
+#content[tabindex='-1']:focus
+{
+    outline: 0;
+}

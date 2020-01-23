@@ -1,0 +1,11 @@
+.infinite-scroll .posts-navigation,
+.infinite-scroll .posts-pagination,
+.infinite-scroll.neverending .site-footer
+{
+    display: none;
+}
+
+.infinity-end.neverending .site-footer
+{
+    display: block;
+}

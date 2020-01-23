@@ -1,0 +1,17 @@
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+
+    border: none;
+}
+
+embed,
+iframe,
+object
+{
+    max-width: 100%;
+}

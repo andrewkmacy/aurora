@@ -1,0 +1,198 @@
+/*!
+Theme Name: 	Aurora
+Author: 		Drew Macy
+Author URI: 	http://www.github.com
+Description: 	A starter theme based on Underscores. No child theme is required to use the theme, simply give the theme a new name and away you go. This theme is meant for developers although it does not require much development experience. Aurora is in fact a great learning tool. This theme plays nicely with the Block Editor as well as the Classic Editor. It provides a quick and easy way of building a fully responsive and accessibility-ready theme without much effort.
+Version: 		5.0.0
+License: 		GNU General Public License v2 or later
+License URI: 	LICENSE
+Text Domain: aurora 	stix
+Tags:			one-column, two-columns, left-sidebar, right-sidebar, accessibility-ready, custom-background, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, blog
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Stix is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+ 1. CSS Reset
+ 2. Typography
+ 3. Elements
+	3.1 HTML
+	3.2 Lists
+	3.3 Tables
+ 4. Forms
+	4.1 Buttons
+	4.2 Fields
+	4.3 Search
+ 5. Navigation
+	5.1 Links
+	5.2 Primary Menu
+	5.3 Footer Menu
+	5.4 Pagination/Navigation
+ 6. Accessibility
+ 7. Alignments
+ 8. Clearings
+ 9. Layout
+	9.1 Layout
+	9.2 Posts and Pages
+10. Widgets
+11. Comments
+12. Infinite Scroll
+13. Blocks
+14. Media
+	14.1 Captions
+	14.2 Galleries
+	14.3 Media
+--------------------------------------------------------------*/
+@import "variables/options";
+@import "variables/mixins";
+
+/*--------------------------------------------------------------
+1. CSS Reset
+
+A short set of CSS rules that resets the styling of all HTML
+elements to a consistent baseline. This makes cross-browser
+compatibility easier to achieve. Please do not make changes
+to this section.
+
+--------------------------------------------------------------*/
+@import "css-reset/css-reset";
+
+/*--------------------------------------------------------------
+2. Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+
+/*--------------------------------------------------------------
+3. Elements
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+3.1 HTML
+--------------------------------------------------------------*/
+@import "elements/html";
+
+/*--------------------------------------------------------------
+3.2 Lists
+--------------------------------------------------------------*/
+@import "elements/lists";
+
+/*--------------------------------------------------------------
+3.3 Tables
+--------------------------------------------------------------*/
+@import "elements/tables";
+
+/*--------------------------------------------------------------
+4. Forms
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+4.1 Buttons
+--------------------------------------------------------------*/
+@import "forms/buttons";
+
+/*--------------------------------------------------------------
+4.2 Fields
+--------------------------------------------------------------*/
+@import "forms/fields";
+
+/*--------------------------------------------------------------
+4.3 Search
+--------------------------------------------------------------*/
+@import "forms/search";
+
+/*--------------------------------------------------------------
+5. Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.1 Links
+--------------------------------------------------------------*/
+@import "navigation/links";
+
+/*--------------------------------------------------------------
+5.2 Primary Menu
+Only one media break is used to make the distinction between
+the mobile and destop menu clearer.
+--------------------------------------------------------------*/
+@import "navigation/primary-menu";
+
+/*--------------------------------------------------------------
+5.3 Footer Menu
+--------------------------------------------------------------*/
+@import "navigation/footer-menu";
+
+/*--------------------------------------------------------------
+5.4 Post(s) Pagination/Navigation
+--------------------------------------------------------------*/
+@import "navigation/pagination-navigation";
+
+/*--------------------------------------------------------------
+6. Accessibility
+--------------------------------------------------------------*/
+@import "accessibility/accessibility";
+
+/*--------------------------------------------------------------
+7. Alignments
+--------------------------------------------------------------*/
+@import "alignments/alignments";
+
+/*--------------------------------------------------------------
+8. Clearings
+--------------------------------------------------------------*/
+@import "clearings/clearings";
+
+/*--------------------------------------------------------------
+9.Layout
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+9.1 Layout
+--------------------------------------------------------------*/
+@import "layout/layout";
+
+/*--------------------------------------------------------------
+9.2 Posts and Pages
+--------------------------------------------------------------*/
+@import "layout/posts-and-pages";
+
+/*--------------------------------------------------------------
+10. Widgets
+--------------------------------------------------------------*/
+@import "widgets/widgets";
+
+/*--------------------------------------------------------------
+11. Comments
+--------------------------------------------------------------*/
+@import "comments/comments";
+
+/*--------------------------------------------------------------
+12. Infinite Scroll
+--------------------------------------------------------------*/
+@import "infinite-scroll/infinite-scroll";
+
+/*--------------------------------------------------------------
+13. Blocks
+--------------------------------------------------------------*/
+@import "blocks/blocks";
+
+/*--------------------------------------------------------------
+14. Media
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+14.1 Captions
+--------------------------------------------------------------*/
+@import "media/captions";
+
+/*--------------------------------------------------------------
+14.2 Galleries
+--------------------------------------------------------------*/
+@import "media/galleries";
+
+/*--------------------------------------------------------------
+14.3 Media
+--------------------------------------------------------------*/
+@import "media/media";

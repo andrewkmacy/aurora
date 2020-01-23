@@ -1,0 +1,69 @@
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit']
+{
+    line-height: $line__height-single;
+
+    margin: 0;
+    padding: 13px 16px;
+
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+
+    color: $color__white;
+    border: solid 1px $color__link-color;
+    background-color: $color__link-color;
+    @include font-size(.8125);
+    @include border-radius(0);
+}
+
+button:hover,
+input[type='button']:hover,
+input[type='reset']:hover,
+input[type='submit']:hover
+{
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+
+    color: $color__white;
+    border: solid 1px $color__link-hover-color;
+    outline-offset: -3px;
+    background-color: $color__link-hover-color;
+}
+
+button:focus,
+button:active,
+input[type='button']:focus,
+input[type='button']:active,
+input[type='reset']:focus,
+input[type='reset']:active,
+input[type='submit']:focus,
+input[type='submit']:active
+{
+    text-decoration: none;
+
+    color: $color__white;
+    border: solid 1px $color__link-hover-color;
+    outline: dotted 1px $color__white;
+    outline-offset: -3px;
+    background-color: $color__link-hover-color;
+}
+
+.disabled
+{
+    cursor: not-allowed;
+
+    @include opacity(.5);
+}
+
+.disabled > a
+{
+    display: inline-block;
+
+    text-decoration: none;
+    pointer-events: none;
+
+    color: currentColor;
+}

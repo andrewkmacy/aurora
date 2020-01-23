@@ -1,0 +1,73 @@
+.footer-navigation
+{
+    width: 100%;
+    margin: 0 0 40px 0;
+}
+
+.footer-navigation ul
+{
+    display: block;
+
+    list-style: none;
+	margin: 0;
+	padding: 0;
+
+    text-align: left;
+}
+
+.footer-navigation ul li
+{
+    position: relative;
+
+    display: inline-block;
+
+    margin: 0 5px 0 0;
+    padding: 0;
+}
+
+.footer-navigation ul li:last-child
+{
+    margin: 0;
+}
+
+.footer-navigation ul a
+{
+    display: inline-block;
+
+    padding: 0.5em 0.75em;
+
+    border: solid 1px $color__border-color;
+    text-decoration: none;
+}
+
+.footer-navigation a:link,
+.footer-navigation a:visited
+{
+    display: block;
+
+    letter-spacing: 1px;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus,
+.footer-navigation a:active
+{
+    outline-offset: -2px;
+    background-color: $color__secondary-background-color;
+}
+
+.footer-navigation a:active
+{
+    outline: dotted 1px $color__black;
+}
+
+li.current_page_item > a,
+li.current-menu-item > a,
+li.current_page_ancestor > a
+{
+    cursor: default;
+    text-decoration: none;
+
+    color: $color__link-color;
+    background-color: $color__secondary-background-color;
+}

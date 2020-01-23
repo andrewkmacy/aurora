@@ -1,0 +1,58 @@
+img.alignright,
+figure.alignright
+{
+    display: inline;
+    float: right;
+
+    margin: 0 0 1em 1.5em;
+}
+
+img.alignleft,
+figure.alignleft
+{
+    display: inline;
+    float: left;
+
+    margin: 0 1.5em 1em 0;
+}
+
+img.aligncenter,
+figure.aligncenter
+{
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.alignnone
+{
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+}
+
+a img.alignright
+{
+    display: inline;
+    float: right;
+
+    margin: 0 0 1em 1.5em;
+}
+
+a img.alignleft
+{
+    display: inline;
+    float: left;
+
+    margin: 0 1.5em 1em 0;
+}
+
+a img.aligncenter
+{
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+}

@@ -1,0 +1,84 @@
+body,
+button,
+input,
+select,
+optgroup,
+textarea
+{
+    line-height: $line__height-body;
+    @include font-size(1);
+}
+
+body
+{
+    font-family: $font__body-font;
+    font-weight: 300;
+
+    color: $color__primary-color;
+    background-color: $color__primary-background-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: $font__headings-font;
+    font-weight: 400;
+
+    clear: both;
+
+    word-wrap: break-word;
+}
+
+h1
+{
+    @include font-size(2);
+}
+
+h2
+{
+    @include font-size(1.5);
+}
+
+h3
+{
+    @include font-size(1.375);
+}
+
+h4
+{
+    @include font-size(1.25);
+}
+
+h5
+{
+    @include font-size(1.125);
+}
+
+.site-title
+{
+    font-family: $font__headings-font;
+    font-weight: 400;
+    line-height: $line__height-single;
+
+    margin: 0 0 8px 0;
+    @include font-size(2);
+}
+
+.site-description
+{
+    line-height: $line__height-single;
+
+    display: block;
+
+    margin: 0;
+}
+
+h6,
+p
+{
+    @include font-size(1);
+}

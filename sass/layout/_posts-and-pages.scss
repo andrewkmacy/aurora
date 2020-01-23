@@ -1,0 +1,236 @@
+.sticky h2.entry-title:after
+{
+    line-height: $line__height-single;
+
+    margin-left: 16px;
+    padding: 1px 8px;
+
+    content: 'Featured';
+
+    color: $color__secondary-color;
+    border: solid 1px $color__border-color;
+    background-color: $color__secondary-background-color;
+    @include font-size(1);
+}
+
+h1.entry-title,
+h2.entry-title,
+h1.page-title
+{
+    line-height: $line__height-single;
+
+    margin: 0;
+    padding-top: 4px;
+}
+
+.entry-featured-archive img,
+.post-thumbnail-singular img
+{
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+}
+
+.entry-header-archive,
+.entry-header-search,
+.entry-header-page,
+.post-thumbnail-singular
+{
+    margin-bottom: 32px;
+}
+
+.entry-title-archive,
+.entry-title-search
+{
+    width: 100%;
+    margin-bottom: 32px;
+    padding: 0 5%;
+
+    text-align: center;
+}
+
+.entry-date-archive,
+.entry-date-search
+{
+    font-size: 90%;
+
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0 5%;
+
+    text-align: center;
+}
+
+.entry-categories-archive,
+.entry-categories-search
+{
+    font-size: 90%;
+
+    width: 100%;
+    margin-bottom: 32px;
+    padding: 0 5%;
+
+    text-align: center;
+}
+
+.entry-content-archive,
+.entry-content-search
+{
+    width: 100%;
+    margin-bottom: 32px;
+    padding: 0 5%;
+
+    text-align: left;
+}
+
+.entry-footer-archive,
+.entry-footer-search
+{
+    font-size: 90%;
+
+    overflow: hidden;
+
+    width: 100%;
+}
+
+.entry-author-archive,
+.entry-comments-archive,
+.entry-author-search,
+.entry-comments-search
+{
+    float: none;
+
+    width: 100%;
+    padding-left: 1px;
+
+    text-align: left;
+}
+
+@include breakpoint(medium)
+{
+    .entry-author-archive,
+    .entry-author-search
+    {
+        float: left;
+
+        width: 50%;
+
+        text-align: left;
+    }
+
+    .entry-comments-archive,
+    .entry-comments-search
+    {
+        float: right;
+
+        width: 50%;
+        padding-right: 1px;
+
+        text-align: right;
+    }
+}
+
+.page-header
+{
+    margin-bottom: 40px;
+    padding: 12px 16px 16px 16px;
+
+    text-align: center;
+
+    color: $color__secondary-color;
+    border: solid 1px $color__border-color;
+    background-color: $color__secondary-background-color;
+
+    @include breakpoint(large)
+    {
+        margin-bottom: 80px;
+    }
+}
+
+.archive-description
+{
+    line-height: $line__height-single;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.archive-description p
+{
+    margin-bottom: 0;
+}
+
+.entry-footer-single
+{
+    margin-bottom: 40px;
+
+    text-align: center;
+}
+
+.author-avatar
+{
+    display: inline-block;
+
+    margin: 0 1em;
+
+    vertical-align: middle;
+}
+
+.author-avatar img
+{
+    border-radius: 50%;
+}
+
+.author-name
+{
+    display: inline-block;
+}
+
+.entry-header-single
+{
+    font-size: 90%;
+
+    overflow: hidden;
+
+    margin-bottom: 32px;
+}
+
+.entry-date-single,
+.entry-categories-single
+{
+    float: none;
+
+    width: 100%;
+
+    text-align: left;
+}
+
+@include breakpoint(medium)
+{
+    .entry-date-single
+    {
+        float: left;
+
+        width: 40%;
+
+        text-align: left;
+    }
+
+    .entry-categories-single
+    {
+        float: right;
+
+        width: 60%;
+        padding-right: 1px;
+
+        text-align: right;
+    }
+}
+
+.entry-title-single
+{
+    margin-bottom: 32px;
+
+    text-align: left;
+}

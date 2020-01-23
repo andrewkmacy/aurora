@@ -1,0 +1,189 @@
+.sidebar-none .content-area
+{
+    float: none;
+
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+
+    @include breakpoint(medium)
+    {
+        padding: 0;
+    }
+}
+
+.sidebar-none .widget-area,
+.sidebar-none .page-template-full-width-page-template .widget-area,
+.sidebar-none .post-template-full-width-post-template .widget-area
+{
+    display: none;
+}
+
+.sidebar-right .content-area
+{
+    float: none;
+
+    width: 100%;
+    margin-right: 0;
+
+    @include breakpoint(medium)
+    {
+        float: left;
+
+        width: 65%;
+        margin-right: 5%;
+    }
+}
+
+.sidebar-right .widget-area
+{
+    float: none;
+
+    width: 100%;
+
+    @include breakpoint(medium)
+    {
+        float: right;
+
+        width: 30%;
+    }
+}
+
+.sidebar-left .content-area
+{
+    float: none;
+
+    width: 100%;
+    margin-left: 0;
+
+    @include breakpoint(medium)
+    {
+        float: right;
+
+        width: 65%;
+        margin-left: 5%;
+    }
+}
+
+.sidebar-left .widget-area
+{
+    float: none;
+
+    width: 100%;
+
+    @include breakpoint(medium)
+    {
+        float: left;
+
+        width: 30%;
+    }
+}
+
+.page-template-full-width-page-template .content-area,
+.post-template-full-width-post-template .content-area
+{
+    float: none;
+
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+
+    @include breakpoint(medium)
+    {
+        padding: 0;
+    }
+}
+
+.page-template-full-width-page-template .widget-area,
+.post-template-full-width-post-template .widget-area
+{
+    display: none;
+}
+
+.horizontal-padding
+{
+    width: 100%;
+    padding-right: $horizontal__padding;
+    padding-left: $horizontal__padding;
+}
+
+.single-vertical-padding
+{
+    padding-top: $padding__single;
+    padding-bottom: $padding__single;
+}
+
+.double-vertical-padding
+{
+    padding-top: $padding__double;
+    padding-bottom: $padding__double;
+}
+
+.vertical-margin
+{
+    margin-bottom: $vertical__mobile-bottom-margin;
+
+    @include breakpoint(medium)
+    {
+        margin-bottom: $vertical__desktop-bottom-margin;
+    }
+}
+
+.branding-holder
+{
+    overflow: hidden;
+}
+
+.site-branding
+{
+    float: none;
+
+    width: 100%;
+    padding-left: 1px;
+
+    @include breakpoint(large)
+    {
+        float: left;
+
+        width: 70%;
+    }
+}
+
+.top-search
+{
+    display: none;
+
+    @include breakpoint(large)
+    {
+        display: block;
+        float: right;
+
+        width: 30%;
+        padding-top: 25px;
+    }
+}
+
+.header-search-none .top-search
+{
+    @include breakpoint(large)
+    {
+        display: none;
+    }
+}
+
+.site-content
+{
+    overflow: hidden;
+}
+
+.site-footer
+{
+    border-top: solid 1px $color__border-color;
+}
+
+.site-main
+{
+    margin: 0;
+    padding: 0;
+}

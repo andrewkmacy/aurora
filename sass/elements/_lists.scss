@@ -1,0 +1,44 @@
+ul,
+ol
+{
+    margin: 0 0 0 1em;
+    padding: 0 0 0 1em;
+}
+
+ul
+{
+    list-style: disc;
+}
+
+ul li
+{
+    margin: 0 0 .5em 1em;
+}
+
+ul li a
+{
+    margin-left: 1px;
+    padding-top: .5em;
+}
+
+ol
+{
+    list-style: decimal;
+}
+
+ol li
+{
+    margin: 0 0 .5em 1em;
+}
+
+ol li a
+{
+    margin-left: 1px;
+    padding-top: .5em;
+}
+
+li > ul,
+li > ol
+{
+    margin-top: .5em;
+}

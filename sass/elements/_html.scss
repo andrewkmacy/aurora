@@ -1,0 +1,189 @@
+html
+{
+    font-size: 100%;
+
+    box-sizing: border-box;
+    @include breakpoint(medium)
+    {
+        font-size: 110%;
+    }
+}
+
+*,
+:before,
+:after
+{
+    box-sizing: inherit;
+}
+
+html,
+body
+{
+    height: 100%;
+}
+
+address
+{
+    font-style: italic;
+
+    margin: 0 0 28px 0;
+}
+
+hr
+{
+    height: 1px;
+    margin-bottom: 24px;
+
+    border: 0;
+    background-color: $color__border-color;
+}
+
+figure
+{
+    margin: 0;
+
+    text-align: center;
+}
+
+mark,
+ins
+{
+    padding: 2px 4px;
+
+    text-decoration: none;
+
+    background-color: $color__secondary-background-color;
+}
+
+blockquote cite
+{
+    font-size: 80%;
+    font-style: italic;
+}
+
+blockquote
+{
+    font-size: 110%;
+    font-style: italic;
+    line-height: $line__height-blockquote;
+
+    margin: 0 0 1.25em 0;
+    padding: .1em 0 1em 1.263157895em;
+}
+
+blockquote
+{
+    quotes: none;
+
+    border-left: solid 4px $color__black;
+}
+
+q
+{
+    border-left: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after
+{
+    content: '';
+}
+
+blockquote p
+{
+    margin-bottom: 1.4736842105em;
+}
+
+blockquote > :last-child
+{
+    margin-bottom: 0;
+}
+
+dd
+{
+    margin: 0 24px 24px 0;
+}
+
+em
+{
+    font-style: italic;
+}
+
+img,
+figure,
+embed
+{
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption
+{
+    line-height: $line__height-body;
+    @include font-size(.6875);
+}
+
+blockquote strong,
+blockquote b,
+dt,
+bold
+{
+    font-weight: 700;
+}
+
+code
+{
+    padding: 20px;
+
+    color: $color__secondary-color;
+    background-color: $color__secondary-background-color;
+}
+
+pre,
+code
+{
+    font-family: $font__code-font;
+
+    text-align: left;
+}
+
+pre
+{
+    line-height: $line__height-single;
+
+    overflow: hidden;
+
+    margin: 0;
+    padding: 20px;
+
+    white-space:      pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space:   -o-pre-wrap;
+    word-wrap: break-word;
+
+    color: $color__secondary-color;
+    border: solid 1px $color__border-color;
+    background-color: $color__secondary-background-color;
+}
+
+code
+{
+    line-height: $line__height-body;
+
+    margin: 0;
+    padding: 0;
+
+    word-wrap: break-word;
+
+    background-color: transparent;
+}
+
+var
+{
+    background-color: $color__secondary-background-color;
+}

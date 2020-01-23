@@ -1,0 +1,82 @@
+// Media breakpoints
+// Large => 960px
+// Medium => 783px
+@mixin breakpoint($width) {
+	@if $width == large {
+		@media screen and (min-width: 60em) { @content; }
+	}
+	@else if $width == medium {
+		@media screen and (min-width: 48.9375em) { @content; }
+	}
+}
+
+//	Usage:
+//	.whatever {
+//	 	color: red;
+//		@include breakpoint(medium) {
+//			color: blue;
+//	 	}
+//	}
+//
+//	Output:
+//	.whatever {
+//		color: red;
+//	}
+//	@media screen and (min-width: 48.9375em) {
+//		.whatever {
+//			color: blue;
+//		}
+//	}
+
+// Border radius
+// All code needs to be run through autoprefixer when compiled
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	background-clip: padding-box;
+}
+
+//	Usage:
+//	.whatever {
+//		@include border-radius(3px);
+//	}
+//
+//	Output:
+//	.whatever {
+//		border-radius: 3px;
+//		background-clip: padding-box;
+//	}
+
+// Opacity
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	$opacity-ie: $opacity * 100;
+	filter: alpha(opacity=$opacity-ie);
+}
+
+// Usage:
+//	.whatever {
+//		@include opacity(0.8);
+//	}
+//
+//	Output:
+//	.whatever {
+//		opacity: 0.8;
+//		filter: alpha(opacity=80);
+//	}
+
+// Font size
+@mixin font-size($sizeValue) {
+	font-size: ($sizeValue * 16) + px;
+	font-size: $sizeValue + rem;
+}
+
+//	Usage:
+//	.whatever {
+//		@include font-size(2);
+//	}
+//
+//	Output:
+//	.whatever {
+//		font-size: 32px;
+//		font-size: 2rem;
+//	}

@@ -1,0 +1,114 @@
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='number'],
+input[type='tel'],
+input[type='range'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='color'],
+textarea
+{
+    width: 100%;
+    padding: 8px 16px;
+
+    border: 1px solid $color__border-color;
+    @include border-radius(0);
+}
+
+input[type='text']
+input[type='email'],
+input[type='url']
+{
+    width: 100%;
+
+    @include breakpoint(medium)
+    {
+        width: 60%;
+    }
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='url']:focus,
+input[type='password']:focus,
+input[type='number']:focus,
+input[type='tel']:focus,
+input[type='range']:focus,
+input[type='date']:focus,
+input[type='month']:focus,
+input[type='week']:focus,
+input[type='time']:focus,
+input[type='datetime']:focus,
+input[type='datetime-local']:focus,
+input[type='color']:focus,
+textarea:focus
+{
+    outline: dotted 1px $color__black;
+    outline-offset: -4px;
+}
+
+input[type='checkbox']
+{
+    margin-right: 5px;
+}
+
+.contact-form label span
+{
+    color: $color__red !important;
+}
+
+label.subscribe-label
+{
+    @include font-size(.8125);
+}
+
+li.share-linkedin a.sd-button > span,
+li.share-google-plus-1 a.sd-button > span,
+li.share-facebook a.sd-button > span,
+li.share-twitter a.sd-button > span,
+li.share-pinterest a.sd-button > span,
+li.share-reddit a.sd-button > span
+{
+    color: $color__secondary-color;
+}
+
+.wpl-button a
+{
+    color: $color__secondary-color !important;
+}
+
+input[name='wp-comment-cookies-consent']
+{
+    background-color: $color__black;
+}
+
+::-webkit-input-placeholder
+{
+    color: $color__secondary-color;
+}
+
+:-moz-placeholder
+{
+    color: $color__secondary-color;
+}
+
+::-moz-placeholder
+{
+    color: $color__secondary-color;
+}
+
+:-ms-input-placeholder
+{
+    color: $color__secondary-color;
+}
+
+.required
+{
+    color: $color__red;
+}

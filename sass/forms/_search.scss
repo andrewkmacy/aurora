@@ -1,0 +1,69 @@
+input[type='search']
+{
+    width: 100%;
+    padding: 8px;
+
+    color: $color__primary-color;
+    border: solid 1px $color__border-color;
+    border-right: none;
+    background-color: $color__primary-background-color;
+
+    -webkit-appearance: textfield;
+}
+
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration
+{
+    -webkit-appearance: none;
+}
+
+input[type='search']:hover,
+input[type='search']:focus,
+input[type='search']:active
+{
+    transition: all .2s ease-in-out;
+
+    outline-offset: -3px;
+    background-color: $color__secondary-background-color;
+}
+
+input[type='search']:focus,
+input[type='search']:active
+{
+    outline: dotted 1px $color__black;
+}
+
+.search-form
+{
+    position: relative;
+    top: 0;
+    right: 0;
+
+    display: block;
+
+    max-width: 100%;
+    margin-top: -1px;
+    padding: 0;
+
+    border: none;
+}
+
+input[type='search'].search-field
+{
+    width: calc(100% - 72px);
+
+    @include border-radius(0);
+}
+
+.search-submit
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    overflow: hidden;
+
+    width: 72px;
+    height: 100%;
+    padding: 0;
+}

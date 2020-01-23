@@ -1,0 +1,459 @@
+/*
+Theme Name: Aurora
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+blockquote {
+  	padding: .1em 1.263157895em 1em 0;
+}
+
+blockquote {
+  	border-left: none;
+	border-right: solid 4px #000000;
+}
+
+q {
+  	border-left: none;
+	border-right: none;
+}
+
+dd {
+  	margin: 0 0 24px 24px;
+}
+
+pre,
+code {
+  	text-align: left;/*no change in rtl*/
+  	direction: ltr;/*no change in rtl*/
+}
+
+ul li {
+  	margin: 0 24px 8px 0;
+}
+
+ul li a {
+  	margin-left: 0;
+	margin-right: 1px;
+}
+
+ol li {
+  	margin: 0 24px 8px 0;
+}
+
+ol li a {
+  	margin-left: 1px;
+	margin-right: 1px;
+}
+
+table td {
+  	text-align: right;
+}
+
+table th {
+  	text-align: right;
+}
+
+input[type='checkbox'] {
+  	margin-right: 0;
+	margin-left: 5px;
+}
+
+input[type='search'] {
+    border-left: none;
+	border-right: solid 1px #d1d1d1;
+}
+
+.search-form {
+  	right: auto;
+	left: 0;
+}
+
+.search-submit {
+  	right: auto;
+	left: 0;
+}
+
+.toggle-holder {
+  	text-align: right;
+}
+
+.main-navigation ul {
+  	text-align: right;
+}
+
+.main-navigation ul a {
+  	padding: 0.5em 0.5em 0.5em 0;
+}
+
+.main-navigation ul ul a {
+  	padding: 0.5em 1em 0.5em 0;
+}
+
+.main-navigation ul ul ul a {
+  	padding: .5em 2em .5em 0;
+}
+
+.main-navigation ul ul ul ul a {
+  	padding: 0.5em 3em 0.5em 0;
+}
+
+.main-navigation ul ul ul ul ul a {
+  	padding: 0.5em 4em 0.5em 0;
+}
+
+.main-navigation ul ul ul ul ul ul a {
+  	padding: 0.5em 5em 0.5em 0;
+}
+
+@media screen and (min-width: 60em) {
+
+  	.main-navigation ul {
+    	text-align: right;
+  	}
+	
+	.main-navigation ul a
+    {
+        padding: 0.5em 0.75em;
+    }
+	
+	.main-navigation ul ul {
+		left: auto;
+		right: -999em;
+	}
+	
+	.main-navigation ul ul ul {
+		left: auto;
+		right: -999em;
+  	}
+	
+  	.main-navigation ul li:first-child:hover > ul,
+  	.main-navigation ul li:first-child.focus > ul {
+    	left: auto;
+	  	right: 0;
+  	}
+  	.main-navigation ul li:hover > ul,
+  	.main-navigation ul li.focus > ul {
+    	left: auto;
+	  	right: 0;
+  	}
+	
+	.main-navigation ul li:hover > ul ul,
+  	.main-navigation ul li.focus > ul ul {
+    	left: auto;
+	  right: -99999em;
+  	}
+	
+	.main-navigation ul ul li:hover > ul,
+  	.main-navigation ul ul li.focus > ul,
+  	.main-navigation ul ul li:first-child:hover > ul,
+  	.main-navigation ul ul li:first-child.focus > ul {
+    	left: auto;
+	  	right: 100%;
+  	}
+	
+  	.main-navigation ul ul li {
+    	text-align: right;
+  	}
+
+  	.main-navigation ul ul ul {
+    	left: auto;
+	  	right: 100%;
+  	}
+}
+
+li.search {
+  	float: left;
+}
+
+.footer-navigation ul {
+  	text-align: right;
+}
+
+.footer-navigation ul li {
+  	margin: 0 0 0 5px;
+}
+
+.navigation .nav-links .nav-previous {
+  	text-align: right;
+  	margin-right: 0;
+	margin-left: 1px;
+}
+
+.navigation .nav-links .nav-next {
+  	text-align: left;
+  	margin-left: 0;
+	margin-right: 1px;
+}
+
+.pagination .page-numbers {
+	margin-right: 0;
+  	margin-left: 5px;
+}
+
+.pagination .nav-links {
+  	text-align: right;
+}
+
+.pagination .nav-links .nav-previous {
+  	float: right;
+  	text-align: right;
+}
+
+.pagination .nav-links .nav-next {
+  	float: left;
+  	text-align: left;
+}
+
+.topbutton {
+  	right: auto;
+	left: 30px;
+}
+
+.screen-reader-text:focus {
+  	left: auto;
+	right: 5px;
+}
+
+@media screen and (min-width: 48.9375em) {
+  	.sidebar-right .content-area {
+    	float: right;
+    	margin-right: 0;
+	  	margin-left: 5%;
+  	}
+}
+
+@media screen and (min-width: 48.9375em) {
+  	.sidebar-right .widget-area {
+    	float: left;
+  	}
+}
+
+.sidebar-left .content-area {
+  	margin-right: 0;
+}
+
+@media screen and (min-width: 48.9375em) {
+  	.sidebar-left .content-area {
+    	float: left;
+		margin-left: 0;
+    	margin-right: 5%;
+  	}
+}
+
+@media screen and (min-width: 48.9375em) {
+  	.sidebar-left .widget-area {
+    	float: right;
+  	}
+}
+
+.site-branding {
+  	padding-left: 0;
+	padding-right: 1px;
+}
+
+@media screen and (min-width: 60em) {
+  	.site-branding {
+    	float: right;
+  	}
+}
+
+@media screen and (min-width: 60em) {
+  	.top-search {
+    	float: left;
+  	}
+}
+
+.sticky h2.entry-title:before {
+  	margin-left: 0;
+	margin-right: 16px;
+}
+
+.entry-title-single
+{
+    text-align: right;
+}
+
+.entry-content-archive,
+.entry-content-search {
+  	text-align: right;
+}
+
+.entry-author-archive,
+.entry-comments-archive,
+.entry-author-search,
+.entry-comments-search {
+  	text-align: right;
+  	padding-left: 0;
+	padding-right: 1px;
+}
+
+.entry-categories-archive,
+.entry-categories-search {
+    text-align: center;
+}
+
+@media screen and (min-width: 48.9375em) {
+  .entry-author-archive,
+  .entry-author-search {
+    	float: right;
+    	text-align: right;
+  }
+
+  .entry-comments-archive,
+  .entry-comments-search {
+	  float: left;
+    	text-align: left;
+    	padding-right: 0;
+	  	padding-left: 1px;
+  	}
+}
+
+.entry-date-single,
+.entry-categories-single {
+  	text-align: right;
+}
+
+@media screen and (min-width: 48.9375em) {
+  	.entry-date-single {
+    	float: right;
+    	text-align: right;
+		padding-right: 1px;
+	}
+
+  	.entry-categories-single {
+    	float: left;
+    	text-align: left;
+    	padding-right: 0;
+	  	padding-left: 1px;
+  	}
+}
+
+.entry-content p.has-drop-cap:first-letter {
+  	margin: 0 0 0 0.25em;
+}
+
+.widget_calendar tbody td#today:after {
+  	right: auto;
+	left: 0;
+  	border-left: none;
+	border-right: 10px solid transparent;
+}
+
+.widget_calendar tfoot tr #prev {
+  	text-align: right;
+}
+
+.widget_calendar tfoot tr #next {
+  	text-align: left;
+}
+
+.widget ul li a {
+  	padding-left: 0;
+	padding-right: 10px;
+}
+
+.widget ul ul li,
+.widget ul ul ul li,
+.widget ul ul ul ul li,
+.widget ul ul ul ul ul li,
+.widget ul ul ul ul ul ul li {
+  	margin-left: 0;
+	margin-right: 19px;
+}
+
+.widget_tag_cloud .tagcloud a {
+  	margin: 0 0 20px 10px;
+}
+
+.widget-area-1,
+.widget-area-2,
+.widget-area-3 {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 48.9375em) {
+  .widget-area-2 {
+	  float: right;
+	  margin-right: 0;
+	  margin-left: 5%;
+  }
+
+  .widget-area-3 {
+	  float: right;
+	  margin-right: 0;
+	  margin-left: 5%;
+  }
+
+  .widget-area-2:last-child,
+  .widget-area-3:last-child {
+	  margin-left: 0;
+  }
+}
+
+.comment-list .children > li {
+  	padding-left: 0;
+	padding-right: 0.875em;
+}
+
+.comment-author .avatar {
+  	float: right;
+  	margin-right: 0;
+  	margin-left: 0.5em;
+}
+
+.bypostauthor .fn:after {
+  	margin-left: 0;
+ 	margin-right: 10px;
+}
+
+.comment-metadata .edit-link,
+.pingback .edit-link {
+  	margin-left: 0;
+	margin-right: 5px;
+}
+
+.comment-content ul,
+.comment-content ol {
+  	margin: 0 1.25em 1.5em 0;
+}
+
+.comment-reply-title small a {
+  	float: left;
+}
+
+.entry-content .wp-block-gallery {
+  	padding-right: 0;
+}
+
+.entry-content .wp-block-pullquote blockquote {
+  	margin-left: 0;
+  	border-right: none;
+}
+
+.entry-content .wp-block-quote.is-large,
+.wp-block-quote.is-style-large {
+  	border-right: 0;
+}
+
+@media screen and (min-width: 48.9375em) {
+
+  .wp-block-column:first-child {
+    margin: 0 0 0 32px !important;
+  }
+
+  .wp-block-column:last-child {
+    margin: 0 32px 0 0 !important;
+  }
+}

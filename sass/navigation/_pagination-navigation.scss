@@ -1,0 +1,126 @@
+.navigation .nav-links:not(.pagination)
+{
+    display: flex;
+
+    margin-bottom: 40px;
+    padding: .75em 0;
+
+    word-break: break-word;
+
+    @include breakpoint(medium)
+    {
+        margin-bottom: 0;
+    }
+}
+
+.navigation .nav-links .nav-previous
+{
+    margin-right: 1px;
+    padding: 10px 0;
+
+    text-align: left;
+
+    flex: 1;
+}
+
+.navigation .nav-links .nav-next
+{
+    margin-left: 1px;
+    padding: 10px 0;
+
+    text-align: right;
+
+    flex: 1;
+}
+
+.pagination
+{
+    display: block;
+
+    padding: 0;
+    @include font-size(.875);
+}
+
+.pagination .page-numbers
+{
+    line-height: $line__height-single;
+
+    display: inline-block;
+
+    margin-right: 5px;
+    padding: 10px;
+
+    text-decoration: none;
+
+    border: 1px solid $color__border-color;
+}
+
+.pagination .navigation
+{
+    padding: 0;
+}
+
+.pagination .nav-links
+{
+    padding: 0 5%;
+
+    text-align: left;
+}
+
+.pagination .nav-links .nav-previous
+{
+    float: left;
+
+    width: 50%;
+
+    text-align: left;
+}
+
+.pagination .nav-links .nav-next
+{
+    float: right;
+
+    width: 50%;
+    padding: 20px;
+
+    text-align: right;
+
+    border: solid 1px $color__border-color;
+    background-color: $color__secondary-background-color;
+}
+
+.pagination .nav-links .nav-previous a,
+.pagination .nav-links .nav-next a
+{
+    display: inline-block;
+
+    padding: 12px;
+}
+
+.pagination .nav-links a:link,
+.pagination .nav-links a:visited
+{
+    text-decoration: underline;
+
+    color: $color__primary-color;
+    border: solid 1px $color__border-color;
+    background-color: $color__primary-background-color;
+}
+
+.pagination .nav-links a:hover,
+.pagination .nav-links a:focus,
+.pagination .nav-links a:active,
+.pagination .current
+{
+    text-decoration: none;
+
+    color: $color__secondary-color;
+    background-color: $color__secondary-background-color;
+}
+
+.pagination .nav-links a:focus,
+.pagination .nav-links a:active
+{
+    outline: dotted 1px $color__black;
+    outline-offset: -4px;
+}

@@ -1,0 +1,57 @@
+// Please remember that all changes here could have an effect on the
+// block-editor-style.css and classic-editor-style.css files.
+// The default setting for each option is shown as a comment on each.
+// When you make changes please leave the defaults so that you can
+// rectify any problems by restoring the default.
+
+// COLORS
+// All changes made here must also be made in inc/template-functions.php
+// (aurora_block_editor_color_palette)
+// Please ensure that all colours selected have sufficient colour contrast.
+// A good place to start selecting a colour scheme is http://colorsafe.co/
+$color__primary-background-color: #ffffff;//default #ffffff
+$color__primary-color: #575757;//default #575757
+$color__secondary-background-color: #f5f5f5;//default #f5f5f5
+$color__secondary-color: #525252;//default #525252
+
+$color__border-color: #d1d1d1;//default #d1d1d1
+
+$color__link-color: #00538a;//default #00538a
+$color__link-hover-color: #a3041f;//default #a3041f
+
+$color__black: #000000;//default #000000
+$color__white: #ffffff;//default #ffffff
+$color__blue: #00538a;//default #00538a
+$color__red: #a3041f;//default #a3041f
+
+// FONT FAMILIES
+$font__body-font: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;//default -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif
+$font__headings-font: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;//-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif
+$font__code-font: 'Courier 10 Pitch', Courier, monospace;//default 'Courier 10 Pitch', Courier, monospace
+
+// LINE HEIGHTS
+$line__height-body: 1.8;//default 1.8
+$line__height-blockquote: 1.4736842105;//default 1.4736842105
+$line__height-single: 1;//default 1
+$line__height-comments: 1.6153846154;//default 1.6153846154
+
+// HORIZONTAL PADDING
+// This setting is set as the left and right padding in a class .horizontal-padding
+// By default this class is set to site-header, site-content & site-footer
+$horizontal__padding: 5%;//default 5%
+
+// SINGLE VERTICAL PADDING
+// This setting is set as the top and bottom padding in a class .single-vertical-padding
+// By default this class is set to site-branding
+$padding__single: 20px;//default 20px
+
+// DOUBLE VERTICAL PADDING
+// This setting is set as the top and bottom padding in a class .double-vertical-padding
+// By default this class is set to site-footer
+$padding__double: 40px;//default 40px
+
+// VERTICAL MARGIN
+// This setting is set as the bottom margin in a class .vertical-margin
+// By default this class is set to site-header, site-content & post
+$vertical__mobile-bottom-margin: 40px;//default 40px
+$vertical__desktop-bottom-margin: 80px;//default 80px

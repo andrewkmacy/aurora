@@ -1,0 +1,244 @@
+.widget_calendar
+{
+    width: 100%;
+    max-width: 37.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.widget_calendar caption
+{
+    font-weight: 700;
+
+    padding: 4px;
+
+    text-align: center;
+
+    color: $color__secondary-color;
+    border-top: solid 1px $color__border-color;
+    border-right: solid 1px $color__border-color;
+    border-left: solid 1px $color__border-color;
+    background-color: $color__secondary-background-color;
+}
+
+.widget_calendar thead th
+{
+    font-size: 90%;
+    font-weight: 400;
+
+    padding: 4px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $color__secondary-color;
+    background-color: $color__secondary-background-color;
+}
+
+.widget_calendar tbody td
+{
+    position: relative;
+
+    padding: 2px;
+
+    text-align: center;
+
+    border: 1px solid $color__border-color;
+    background-color: $color__primary-background-color;
+}
+
+.widget_calendar tbody td.pad
+{
+    @include opacity(.7);
+}
+
+.widget_calendar tbody td#today
+{
+    font-weight: 700;
+}
+
+.widget_calendar tbody td#today:after
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 0;
+    height: 0;
+
+    content: '';
+
+    border-top: 10px solid $color__link-hover-color;
+    border-left: 10px solid transparent;
+}
+
+.widget_calendar tbody td a
+{
+    display: block;
+}
+
+.widget_calendar tbody td a:focus,
+.widget_calendar tbody td a:active
+{
+    outline-offset: -2px;
+}
+
+.widget_calendar tfoot tr td
+{
+    padding: 0;
+
+    border: solid 1px $color__border-color;
+}
+
+.widget_calendar tfoot tr a
+{
+    display: block;
+
+    padding: 4px 12px;
+}
+
+.widget_calendar tfoot tr #prev
+{
+    text-align: left;
+}
+
+.widget_calendar tfoot tr #next
+{
+    text-align: right;
+}
+
+.widget-title
+{
+    line-height: $line__height-single;
+
+    margin-top: 0;
+}
+
+.widget
+{
+    margin-bottom: 40px;
+}
+
+.widget ul
+{
+    font-size: 95%;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.widget ul li
+{
+    line-height: $line__height-blockquote;
+
+    display: block;
+
+    margin: 0;
+    padding: 0;
+}
+
+.widget ul li a
+{
+    display: block;
+
+    padding-left: 10px;
+}
+
+.widget ul ul li,
+.widget ul ul ul li,
+.widget ul ul ul ul li,
+.widget ul ul ul ul ul li,
+.widget ul ul ul ul ul ul li
+{
+    margin-left: 19px;
+}
+
+.widget select
+{
+    max-width: 100%;
+}
+
+.widget-content
+{
+    margin-bottom: 0;
+    padding: 20px;
+
+    @include breakpoint(medium)
+    {
+        margin: 0 0 20px 0;
+    }
+}
+
+.widget-content:empty
+{
+    display: none;
+}
+
+.widget_tag_cloud .tagcloud a
+{
+    display: inline-block;
+
+    margin: 0 10px 20px 0;
+    padding: 8px;
+
+    text-decoration: none;
+
+    border: 1px solid $color__border-color;
+    @include font-size(1);
+}
+
+.footer-widget-area
+{
+    overflow: hidden;
+
+    margin-bottom: 40px;
+}
+
+.single-widget-area
+{
+    overflow: hidden;
+
+    margin-bottom: 0;
+}
+
+.widget-area-1,
+.widget-area-2,
+.widget-area-3
+{
+    float: none;
+
+    width: 100%;
+    margin-right: 0;
+}
+
+@include breakpoint(medium)
+{
+    .widget-area-2
+    {
+        float: left;
+
+        width: 47.5%;
+        margin-right: 5%;
+    }
+
+    .widget-area-3
+    {
+        float: left;
+
+        width: 30%;
+        margin-right: 5%;
+    }
+
+    .widget-area-2:last-child,
+    .widget-area-3:last-child
+    {
+        margin-right: 0;
+    }
+}
+
+.widget:last-child
+{
+    margin-bottom: 0;
+}
