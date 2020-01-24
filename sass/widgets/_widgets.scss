@@ -14,10 +14,10 @@
 
     text-align: center;
 
-    color: $color__secondary-color;
-    border-top: solid 1px $color__border-color;
-    border-right: solid 1px $color__border-color;
-    border-left: solid 1px $color__border-color;
+    color: $color__secondary;
+    border-top: solid 1px $color__border;
+    border-right: solid 1px $color__border;
+    border-left: solid 1px $color__border;
     background-color: $color__secondary-background-color;
 }
 
@@ -31,7 +31,7 @@
     text-align: center;
     text-transform: uppercase;
 
-    color: $color__secondary-color;
+    color: $color__secondary;
     background-color: $color__secondary-background-color;
 }
 
@@ -43,7 +43,7 @@
 
     text-align: center;
 
-    border: 1px solid $color__border-color;
+    border: 1px solid $color__border;
     background-color: $color__primary-background-color;
 }
 
@@ -87,7 +87,7 @@
 {
     padding: 0;
 
-    border: solid 1px $color__border-color;
+    border: solid 1px $color__border;
 }
 
 .widget_calendar tfoot tr a
@@ -185,7 +185,7 @@
 
     text-decoration: none;
 
-    border: 1px solid $color__border-color;
+    border: 1px solid $color__border;
     @include font-size(1);
 }
 

@@ -6,7 +6,7 @@
 
 .comment-body
 {
-    border-bottom: solid 1px $color__border-color;
+    border-bottom: solid 1px $color__border;
 }
 
 .says
@@ -92,8 +92,8 @@
 
     content: 'Post Author';
 
-    color: $color__secondary-color;
-    border: solid 1px $color__border-color;
+    color: $color__secondary;
+    border: solid 1px $color__border;
     background-color: $color__secondary-background-color;
     @include font-size(.8125);
 }

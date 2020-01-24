@@ -14,8 +14,8 @@ input[type='submit']
     text-decoration: none;
 
     color: $color__white;
-    border: solid 1px $color__link-color;
-    background-color: $color__link-color;
+    border: solid 1px $color__link;
+    background-color: $color__link;
     @include font-size(.8125);
     @include border-radius(0);
 }

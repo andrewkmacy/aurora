@@ -131,9 +131,9 @@
     text-decoration: none;
 
     color: $color__white;
-    border: solid 1px $color__link-color;
+    border: solid 1px $color__link;
     border-radius: 0;
-    background-color: $color__link-color;
+    background-color: $color__link;
 }
 
 .entry-content .wp-block-button .wp-block-button__link:hover
@@ -172,8 +172,8 @@
     padding-top: calc(2 * 1rem);
     padding-bottom: calc(2 * 1rem);
 
-    border-top: solid 1px $color__border-color;
-    border-bottom: solid 1px $color__border-color;
+    border-top: solid 1px $color__border;
+    border-bottom: solid 1px $color__border;
     border-left: none;
 }
 
@@ -202,7 +202,7 @@
 .entry-content .wp-block-table td,
 .entry-content .wp-block-table th
 {
-    border-color: $color__border-color;
+    border-color: $color__border;
 }
 
 .entry-content .wp-block-quote.is-large,
@@ -288,7 +288,7 @@
     border-radius: 0;
     outline: none;
     outline: none;
-    background-color: $color__link-color;
+    background-color: $color__link;
 }
 
 .entry-content .wp-block-file .wp-block-file__button:hover
@@ -374,22 +374,22 @@
 
 .has-lighter-grey-background-color
 {
-    background-color: $color__border-color;
+    background-color: $color__border;
 }
 
 .has-lighter-grey-color
 {
-    color: $color__border-color;
+    color: $color__border;
 }
 
 .has-light-grey-background-color
 {
-    background-color: $color__primary-color;
+    background-color: $color__primary;
 }
 
 .has-light-grey-color
 {
-    color: $color__primary-color;
+    color: $color__primary;
 }
 
 .has-red-background-color

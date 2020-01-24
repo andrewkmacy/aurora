@@ -131,7 +131,7 @@ ul ul ul a
     cursor: default;
     text-decoration: none;
 
-    color: $color__link-color;
+    color: $color__link;
     background-color: $color__secondary-background-color;
 }
 
@@ -211,7 +211,7 @@ ul ul ul a
 
         margin: 0;
 
-        border: solid 1px $color__border-color;
+        border: solid 1px $color__border;
         background-color: $color__primary-background-color;
     }
 

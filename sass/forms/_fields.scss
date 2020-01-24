@@ -17,7 +17,7 @@ textarea
     width: 100%;
     padding: 8px 16px;
 
-    border: 1px solid $color__border-color;
+    border: 1px solid $color__border;
     @include border-radius(0);
 }
 
@@ -75,12 +75,12 @@ li.share-twitter a.sd-button > span,
 li.share-pinterest a.sd-button > span,
 li.share-reddit a.sd-button > span
 {
-    color: $color__secondary-color;
+    color: $color__secondary;
 }
 
 .wpl-button a
 {
-    color: $color__secondary-color !important;
+    color: $color__secondary !important;
 }
 
 input[name='wp-comment-cookies-consent']
@@ -90,22 +90,22 @@ input[name='wp-comment-cookies-consent']
 
 ::-webkit-input-placeholder
 {
-    color: $color__secondary-color;
+    color: $color__secondary;
 }
 
 :-moz-placeholder
 {
-    color: $color__secondary-color;
+    color: $color__secondary;
 }
 
 ::-moz-placeholder
 {
-    color: $color__secondary-color;
+    color: $color__secondary;
 }
 
 :-ms-input-placeholder
 {
-    color: $color__secondary-color;
+    color: $color__secondary;
 }
 
 .required

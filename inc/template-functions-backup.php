@@ -16,7 +16,6 @@ if ( ! function_exists( 'aurora_body_classes' ) ) {
 	 * @return array
 	 */
 	function aurora_body_classes( $classes ) {
-		
 		// Adds a class of hfeed to non-singular pages.
 		if ( ! is_singular() ) {
 			$classes[] = 'hfeed';
@@ -48,7 +47,6 @@ if ( ! function_exists( 'aurora_body_classes' ) ) {
 	}
 	add_filter( 'body_class', 'aurora_body_classes' );
 }
-
 
 if ( ! function_exists( 'aurora_pingback_header' ) ) {
 	/**
@@ -365,67 +363,3 @@ if ( ! function_exists( 'aurora_alt_custom_header' ) ) {
 	};
 	add_filter( 'get_header_image_tag', 'aurora_alt_custom_header', 10, 3 );
 }
-
-function theme_get_customizer_css() {
-	ob_start();
-
-	$color__primary = get_theme_mod( '$color__primary', '' );
-	if ( ! empty( $color__primary ) ) {
-		?>
-		body {
-			color: <?php echo $color__primary; ?>;
-		}
-		<?php
-	}
-
-
-	$color__link = get_theme_mod( '$color__link', '' );
-	if ( ! empty( $color__link ) ) {
-		?>
-		a {
-			color: <?php echo $color__link; ?>;
-			border-bottom-color: <?php echo $color__link; ?>;
-		}
-		<?php
-	}
-
-	
-	$color__border = get_theme_mod( '$color__border', '' );
-	if ( ! empty( $color__border ) ) {
-		?>
-		input,
-		textarea {
-			border-color: <?php echo $color__border; ?>;
-		}
-		<?php
-	}
-
-	
-	$color__secondary = get_theme_mod( '$color__secondary', '' );
-	if ( ! empty( $color__secondary ) ) {
-		?>
-		a:hover {
-			color: <?php echo $color__secondary; ?>;
-			border-bottom-color: <?php echo $color__secondary; ?>;
-		}
-
-		button,
-		input[type="submit"] {
-			background-color: <?php echo $color__secondary; ?>;
-		}
-		<?php
-	}
-
-	$css = ob_get_clean();
-	return $css;
-}
-
-// Modify our styles registration like so:
-
-function theme_enqueue_styles() {
-wp_enqueue_style( 'theme-styles', get_stylesheet_uri() ); // This is where you enqueue your theme's main stylesheet
-$custom_css = theme_get_customizer_css();
-wp_add_inline_style( 'theme-styles', $custom_css );
-}
-
-add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );

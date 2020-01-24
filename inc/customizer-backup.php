@@ -19,57 +19,6 @@ if ( ! function_exists( 'aurora_customize_register' ) ) {
 		$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 		$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
-/** custom colors
-*
-*/
-
-		// Text color
-		$wp_customize->add_setting( '$color__primary', array(
-		'default'   => '',
-		'transport' => 'refresh',
-		) );
-
-		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, '$color__primary', array(
-		'section' => 'colors',
-		'label'   => esc_html__( 'Text color', 'theme' ),
-		) ) );
-
-		// Link color
-		$wp_customize->add_setting( '$color__link', array(
-		'default'   => '',
-		'transport' => 'refresh',
-		'sanitize_callback' => 'sanitize_hex_color',
-		) );
-
-		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, '$color__link', array(
-		'section' => 'colors',
-		'label'   => esc_html__( 'Link color', 'theme' ),
-		) ) );
-
-		// Accent color
-		$wp_customize->add_setting( '$color__secondary', array(
-		'default'   => '',
-		'transport' => 'refresh',
-		'sanitize_callback' => 'sanitize_hex_color',
-		) );
-
-		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, '$color__secondary', array(
-		'section' => 'colors',
-		'label'   => esc_html__( 'Accent color', 'theme' ),
-		) ) );
-
-		// Border color
-		$wp_customize->add_setting( '$color__border', array(
-		'default'   => '',
-		'transport' => 'refresh',
-		'sanitize_callback' => 'sanitize_hex_color',
-		) );
-
-		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, '$color__border', array(
-		'section' => 'colors',
-		'label'   => esc_html__( 'Border color', 'theme' ),
-		) ) );
-
 		/**
 		 * Add section for use by theme settings
 		 */

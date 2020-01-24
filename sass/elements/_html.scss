@@ -35,7 +35,7 @@ hr
     margin-bottom: 24px;
 
     border: 0;
-    background-color: $color__border-color;
+    background-color: $color__border;
 }
 
 figure
@@ -139,7 +139,7 @@ code
 {
     padding: 20px;
 
-    color: $color__secondary-color;
+    color: $color__secondary;
     background-color: $color__secondary-background-color;
 }
 
@@ -166,8 +166,8 @@ pre
     white-space:   -o-pre-wrap;
     word-wrap: break-word;
 
-    color: $color__secondary-color;
-    border: solid 1px $color__border-color;
+    color: $color__secondary;
+    border: solid 1px $color__border;
     background-color: $color__secondary-background-color;
 }
 
