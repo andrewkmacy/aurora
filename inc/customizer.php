@@ -18,22 +18,10 @@ if ( ! function_exists( 'aurora_customize_register' ) ) {
 		$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 		$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 		$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
-		$wp_customize->remove_control('background_color');
 
 /** custom colors
 *
 */
-
-		// Background color
-		$wp_customize->add_setting( '$color__primary_background', array(
-		'default'   => '#ODOFOE',
-		'transport' => 'refresh',
-		) );
-
-		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, '$color__primary_background', array(
-		'section' => 'colors',
-		'label'   => esc_html__( 'Background color', 'theme' ),
-		) ) );
 
 		// Text color
 		$wp_customize->add_setting( '$color__primary', array(

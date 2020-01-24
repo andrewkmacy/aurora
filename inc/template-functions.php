@@ -364,15 +364,6 @@ if ( ! function_exists( 'aurora_alt_custom_header' ) ) {
 function theme_get_customizer_css() {
 	ob_start();
 
-	$color__primary_background = get_theme_mod( '$color__primary_background', '' );
-	if ( ! empty( $color__primary_background ) ) {
-		?>
-		body {
-			color: <?php echo $color__primary_background; ?>;
-		}
-		<?php
-	}
-
 	$color__primary = get_theme_mod( '$color__primary', '' );
 	if ( ! empty( $color__primary ) ) {
 		?>
