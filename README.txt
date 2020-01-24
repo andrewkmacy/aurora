@@ -16,7 +16,7 @@ A starter theme based on Underscores and Stix. No child theme is required to use
 1. Aurora WordPress Theme, Copyright 2019 Drew Macy
 Aurora is distributed under the terms of the GNU GPL
 
-2. Aurora is based on Underscores (https://underscores.me), (C) 2012-2017 Automattic, Inc. and Stix, by Arnold Goodway (https://wordpress.org/themes/stix/)
+2. Aurora is based on Underscores (https://underscores.me), (C) 2012-2017 Automattic, Inc. and Stix, by Arnold (https://wordpress.org/themes/stix/)
 
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
