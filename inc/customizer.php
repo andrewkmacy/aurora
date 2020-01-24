@@ -81,30 +81,6 @@ if ( ! function_exists( 'aurora_customize_register' ) ) {
 			)
 		);
 		$wp_customize->add_setting(
-			'aurora_search_header_setting',
-			array(
-				'default'           => 'yes',
-				'transport'         => 'refresh',
-				'sanitize_callback' => 'aurora_radio_text_sanitization',
-			)
-		);
-		$wp_customize->add_control(
-			new aurora_Text_Radio_Button_Control(
-				$wp_customize,
-				'aurora_search_header',
-				array(
-					'settings' => 'aurora_search_header_setting',
-					'section'  => 'aurora_options_section',
-					'type'     => 'text_radio_button',
-					'label'    => __( 'Add Search Form to Header', 'aurora' ),
-					'choices'  => array(
-						'yes' => __( 'Yes', 'aurora' ),
-						'no'  => __( 'No', 'aurora' ),
-					),
-				)
-			)
-		);
-		$wp_customize->add_setting(
 			'aurora_sidebar_position_setting',
 			array(
 				'default'           => 'none',

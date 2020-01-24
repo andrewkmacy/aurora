@@ -39,11 +39,6 @@ if ( ! function_exists( 'aurora_body_classes' ) ) {
 			}
 		}
 
-		// Adds class for header search form selection in Customizer.
-		if ( 'no' === get_theme_mod( 'aurora_search_header_setting', 'yes' ) ) {
-			$classes[] = 'header-search-none';
-		}
-
 		return $classes;
 	}
 	add_filter( 'body_class', 'aurora_body_classes' );
