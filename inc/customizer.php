@@ -33,12 +33,11 @@ if ( ! function_exists( 'aurora_customize_register' ) ) {
 		'section' => 'colors',
 		'label'   => esc_html__( 'Text color', 'theme' ),
 		) ) );
-
+		
 		// Link color
 		$wp_customize->add_setting( '$color__link', array(
-		'default'   => '#0F084B',
+		'default'   => '#0D0221',
 		'transport' => 'refresh',
-		'sanitize_callback' => 'sanitize_hex_color',
 		) );
 
 		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, '$color__link', array(
@@ -46,7 +45,7 @@ if ( ! function_exists( 'aurora_customize_register' ) ) {
 		'label'   => esc_html__( 'Link color', 'theme' ),
 		) ) );
 
-		// Accent color
+		// Link hover color
 		$wp_customize->add_setting( '$color__secondary', array(
 		'default'   => '#083d77',
 		'transport' => 'refresh',
@@ -55,7 +54,7 @@ if ( ! function_exists( 'aurora_customize_register' ) ) {
 
 		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, '$color__secondary', array(
 		'section' => 'colors',
-		'label'   => esc_html__( 'Accent color', 'theme' ),
+		'label'   => esc_html__( 'Link hover color', 'theme' ),
 		) ) );
 
 		// Border color

@@ -1,6 +1,8 @@
 a
 {
     transition: all .2s ease-in-out;
+    
+    color: $color__link;
 }
 
 a:link,
@@ -23,7 +25,7 @@ a:active
 a:focus,
 a:active
 {
-    outline: dotted 1px $color__black;
+    outline: dotted 1px $color__link;
 }
 
 a:focus img,

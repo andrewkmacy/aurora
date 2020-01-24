@@ -372,9 +372,7 @@ function theme_get_customizer_css() {
 		}
 		<?php
 	}
-
-
-	$color__link = get_theme_mod( '$color__link', '' );
+	$color__link = get_theme_mod( 'color__link', '' );
 	if ( ! empty( $color__link ) ) {
 		?>
 		a {
@@ -383,8 +381,6 @@ function theme_get_customizer_css() {
 		}
 		<?php
 	}
-
-	
 	$color__border = get_theme_mod( '$color__border', '' );
 	if ( ! empty( $color__border ) ) {
 		?>
