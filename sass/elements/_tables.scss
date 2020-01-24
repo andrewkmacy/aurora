@@ -26,7 +26,7 @@ table tbody tr:nth-child(even)
 {
     color: $color__secondary;
     border-bottom: 0;
-    background-color: $color__secondary-background;
+    background-color: $color__secondary_background;
 }
 
 table td
@@ -75,7 +75,7 @@ table thead
 
     color: $color__secondary;
     border-color: inherit;
-    background-color: $color__secondary-background;
+    background-color: $color__secondary_background;
 }
 
 table tr

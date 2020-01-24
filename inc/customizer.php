@@ -7,25 +7,37 @@
  * @since 5.0.0
  * @version 5.0.0
  */
-
 if ( ! function_exists( 'aurora_customize_register' ) ) {
 	/**
 	 * Customizer register.
 	 *
 	 * @param array $wp_customize Main class that makes it all work..
 	 */
+	 
 	function aurora_customize_register( $wp_customize ) {
 		$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 		$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 		$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+		$wp_customize->remove_control('background_color');
 
 /** custom colors
 *
 */
 
+		// Background color
+		$wp_customize->add_setting( '$color__primary_background', array(
+		'default'   => '#ODOFOE',
+		'transport' => 'refresh',
+		) );
+
+		$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, '$color__primary_background', array(
+		'section' => 'colors',
+		'label'   => esc_html__( 'Background color', 'theme' ),
+		) ) );
+
 		// Text color
 		$wp_customize->add_setting( '$color__primary', array(
-		'default'   => '#0D0221',
+		'default'   => '#CCCCCC',
 		'transport' => 'refresh',
 		) );
 
@@ -36,7 +48,7 @@ if ( ! function_exists( 'aurora_customize_register' ) ) {
 		
 		// Link color
 		$wp_customize->add_setting( '$color__link', array(
-		'default'   => '#0D0221',
+		'default'   => '#409940',
 		'transport' => 'refresh',
 		) );
 
@@ -47,7 +59,7 @@ if ( ! function_exists( 'aurora_customize_register' ) ) {
 
 		// Link hover color
 		$wp_customize->add_setting( '$color__secondary', array(
-		'default'   => '#083d77',
+		'default'   => '#326344',
 		'transport' => 'refresh',
 		'sanitize_callback' => 'sanitize_hex_color',
 		) );
@@ -59,7 +71,7 @@ if ( ! function_exists( 'aurora_customize_register' ) ) {
 
 		// Border color
 		$wp_customize->add_setting( '$color__border', array(
-		'default'   => '#64c970',
+		'default'   => '#40384d',
 		'transport' => 'refresh',
 		'sanitize_callback' => 'sanitize_hex_color',
 		) );

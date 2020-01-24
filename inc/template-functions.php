@@ -364,6 +364,15 @@ if ( ! function_exists( 'aurora_alt_custom_header' ) ) {
 function theme_get_customizer_css() {
 	ob_start();
 
+	$color__primary_background = get_theme_mod( '$color__primary_background', '' );
+	if ( ! empty( $color__primary_background ) ) {
+		?>
+		body {
+			color: <?php echo $color__primary_background; ?>;
+		}
+		<?php
+	}
+
 	$color__primary = get_theme_mod( '$color__primary', '' );
 	if ( ! empty( $color__primary ) ) {
 		?>
@@ -372,6 +381,7 @@ function theme_get_customizer_css() {
 		}
 		<?php
 	}
+	
 	$color__link = get_theme_mod( 'color__link', '' );
 	if ( ! empty( $color__link ) ) {
 		?>
@@ -381,6 +391,7 @@ function theme_get_customizer_css() {
 		}
 		<?php
 	}
+	
 	$color__border = get_theme_mod( '$color__border', '' );
 	if ( ! empty( $color__border ) ) {
 		?>
@@ -391,7 +402,6 @@ function theme_get_customizer_css() {
 		<?php
 	}
 
-	
 	$color__secondary = get_theme_mod( '$color__secondary', '' );
 	if ( ! empty( $color__secondary ) ) {
 		?>

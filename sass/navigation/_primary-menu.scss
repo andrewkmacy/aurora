@@ -74,7 +74,7 @@
     text-decoration: none;
 
     outline-offset: -2px;
-    background-color: $color__secondary-background;
+    background-color: $color__secondary_background;
 }
 
 .main-navigation a:active
@@ -132,7 +132,7 @@ ul ul ul a
     text-decoration: none;
 
     color: $color__link;
-    background-color: $color__secondary-background;
+    background-color: $color__secondary_background;
 }
 
 @include breakpoint(large)
@@ -154,7 +154,7 @@ ul ul ul a
     {
         padding-left: 1.25em;
 
-        background-color: $color__primary-background;
+        background-color: $color__primary_background;
     }
 
     .main-navigation ul li
@@ -212,7 +212,7 @@ ul ul ul a
         margin: 0;
 
         border: solid 1px $color__border;
-        background-color: $color__primary-background;
+        background-color: $color__primary_background;
     }
 
     .main-navigation ul ul li a

@@ -6,7 +6,7 @@ input[type='search']
     color: $color__primary;
     border: solid 1px $color__border;
     border-right: none;
-    background-color: $color__primary-background;
+    background-color: $color__primary_background;
 
     -webkit-appearance: textfield;
 }
@@ -24,7 +24,7 @@ input[type='search']:active
     transition: all .2s ease-in-out;
 
     outline-offset: -3px;
-    background-color: $color__secondary-background;
+    background-color: $color__secondary_background;
 }
 
 input[type='search']:focus,
