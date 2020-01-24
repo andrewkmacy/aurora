@@ -18,7 +18,7 @@
     border-top: solid 1px $color__border;
     border-right: solid 1px $color__border;
     border-left: solid 1px $color__border;
-    background-color: $color__secondary-background-color;
+    background-color: $color__secondary-background;
 }
 
 .widget_calendar thead th
@@ -32,7 +32,7 @@
     text-transform: uppercase;
 
     color: $color__secondary;
-    background-color: $color__secondary-background-color;
+    background-color: $color__secondary-background;
 }
 
 .widget_calendar tbody td
@@ -44,7 +44,7 @@
     text-align: center;
 
     border: 1px solid $color__border;
-    background-color: $color__primary-background-color;
+    background-color: $color__primary-background;
 }
 
 .widget_calendar tbody td.pad
@@ -68,7 +68,7 @@
 
     content: '';
 
-    border-top: 10px solid $color__link-hover-color;
+    border-top: 10px solid $color__link-hover;
     border-left: 10px solid transparent;
 }
 

@@ -52,7 +52,7 @@ ins
 
     text-decoration: none;
 
-    background-color: $color__secondary-background-color;
+    background-color: $color__secondary-background;
 }
 
 blockquote cite
@@ -140,7 +140,7 @@ code
     padding: 20px;
 
     color: $color__secondary;
-    background-color: $color__secondary-background-color;
+    background-color: $color__secondary-background;
 }
 
 pre,
@@ -168,7 +168,7 @@ pre
 
     color: $color__secondary;
     border: solid 1px $color__border;
-    background-color: $color__secondary-background-color;
+    background-color: $color__secondary-background;
 }
 
 code
@@ -185,5 +185,5 @@ code
 
 var
 {
-    background-color: $color__secondary-background-color;
+    background-color: $color__secondary-background;
 }

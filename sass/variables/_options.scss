@@ -10,15 +10,15 @@
 // (aurora_block_editor_color_palette)
 // Please ensure that all colours selected have sufficient colour contrast.
 // A good place to start selecting a colour scheme is http://colorsafe.co/
-$color__primary-background-color: #FFFFFF;//default #ffffff
+$color__primary-background: #FFFFFF;//default #ffffff
 $color__primary: #0D0221;//default #0D0221
-$color__secondary-background-color: #DDDDDD;//default #DDDDDD
-$color__secondary: #0F084B;//default #0F084B
+$color__secondary-background: #DDDDDD;//default #DDDDDD
+$color__secondary: #083d77;//default #083d77
 
-$color__border: #083D77;//default #083D77
+$color__border: #64c970;//default #64c970
 
-$color__link: #0D0221;//default #0D0221
-$color__link-hover-color: #0F084B;//default #0F084B
+$color__link: #0F084B;//default #0F084B
+$color__link-hover: #64c970;//default #64c970
 
 $color__black: #0D0221;//default #0D0221
 $color__white: rgba(250,250,250,.85);//default #ffffff

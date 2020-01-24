@@ -144,9 +144,9 @@
     text-decoration: none;
 
     color: $color__white;
-    border: solid 1px $color__link-hover-color;
+    border: solid 1px $color__link-hover;
     outline-offset: -3px;
-    background-color: $color__link-hover-color;
+    background-color: $color__link-hover;
 }
 
 .entry-content .wp-block-button .wp-block-button__link:focus,
@@ -155,10 +155,10 @@
     text-decoration: none;
 
     color: $color__white;
-    border: solid 1px $color__link-hover-color;
+    border: solid 1px $color__link-hover;
     outline: dotted 1px $color__white;
     outline-offset: -3px;
-    background-color: $color__link-hover-color;
+    background-color: $color__link-hover;
 }
 
 .entry-content .wp-block-pullquote
@@ -296,8 +296,8 @@
     cursor: pointer;
 
     color: $color__white;
-    border-color: $color__link-hover-color;
-    background-color: $color__link-hover-color;
+    border-color: $color__link-hover;
+    background-color: $color__link-hover;
 }
 
 .entry-content .wp-block-file .wp-block-file__button:focus
@@ -305,7 +305,7 @@
     color: $color__white;
     outline: dotted 1px $color__white;
     outline-offset: -4px;
-    background-color: $color__link-hover-color;
+    background-color: $color__link-hover;
 }
 
 .wp-block-columns
@@ -364,12 +364,12 @@
 
 .has-lightest-grey-background-color
 {
-    background-color: $color__secondary-background-color;
+    background-color: $color__secondary-background;
 }
 
 .has-lightest-grey-color
 {
-    color: $color__secondary-background-color;
+    color: $color__secondary-background;
 }
 
 .has-lighter-grey-background-color

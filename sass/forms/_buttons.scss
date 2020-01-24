@@ -29,9 +29,9 @@ input[type='submit']:hover
     text-decoration: none;
 
     color: $color__white;
-    border: solid 1px $color__link-hover-color;
+    border: solid 1px $color__link-hover;
     outline-offset: -3px;
-    background-color: $color__link-hover-color;
+    background-color: $color__link-hover;
 }
 
 button:focus,
@@ -46,10 +46,10 @@ input[type='submit']:active
     text-decoration: none;
 
     color: $color__white;
-    border: solid 1px $color__link-hover-color;
+    border: solid 1px $color__link-hover;
     outline: dotted 1px $color__white;
     outline-offset: -3px;
-    background-color: $color__link-hover-color;
+    background-color: $color__link-hover;
 }
 
 .disabled

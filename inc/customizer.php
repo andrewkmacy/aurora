@@ -25,7 +25,7 @@ if ( ! function_exists( 'aurora_customize_register' ) ) {
 
 		// Text color
 		$wp_customize->add_setting( '$color__primary', array(
-		'default'   => '',
+		'default'   => '#0D0221',
 		'transport' => 'refresh',
 		) );
 
@@ -36,7 +36,7 @@ if ( ! function_exists( 'aurora_customize_register' ) ) {
 
 		// Link color
 		$wp_customize->add_setting( '$color__link', array(
-		'default'   => '',
+		'default'   => '#0F084B',
 		'transport' => 'refresh',
 		'sanitize_callback' => 'sanitize_hex_color',
 		) );
@@ -48,7 +48,7 @@ if ( ! function_exists( 'aurora_customize_register' ) ) {
 
 		// Accent color
 		$wp_customize->add_setting( '$color__secondary', array(
-		'default'   => '',
+		'default'   => '#083d77',
 		'transport' => 'refresh',
 		'sanitize_callback' => 'sanitize_hex_color',
 		) );
@@ -60,7 +60,7 @@ if ( ! function_exists( 'aurora_customize_register' ) ) {
 
 		// Border color
 		$wp_customize->add_setting( '$color__border', array(
-		'default'   => '',
+		'default'   => '#64c970',
 		'transport' => 'refresh',
 		'sanitize_callback' => 'sanitize_hex_color',
 		) );
