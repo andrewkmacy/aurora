@@ -1,3 +1,4 @@
+
 // Please remember that all changes here could have an effect on the
 // block-editor-style.css and classic-editor-style.css files.
 // The default setting for each option is shown as a comment on each.
@@ -9,20 +10,21 @@
 // (aurora_block_editor_color_palette)
 // Please ensure that all colours selected have sufficient colour contrast.
 // A good place to start selecting a colour scheme is http://colorsafe.co/
-$color__primary-background-color: #ffffff;//default #ffffff
-$color__primary-color: #575757;//default #575757
-$color__secondary-background-color: #f5f5f5;//default #f5f5f5
-$color__secondary-color: #525252;//default #525252
+$color__primary-background-color: #FFFFFF;//default #ffffff
+$color__primary-color: #0D0221;//default #0D0221
+$color__secondary-background-color: #DDDDDD;//default #DDDDDD
+$color__secondary-color: #0F084B;//default #0F084B
 
-$color__border-color: #d1d1d1;//default #d1d1d1
+$color__border-color: #083D77;//default #083D77
 
-$color__link-color: #00538a;//default #00538a
-$color__link-hover-color: #a3041f;//default #a3041f
+$color__link-color: #0D0221;//default #0D0221
+$color__link-hover-color: #0F084B;//default #0F084B
 
-$color__black: #000000;//default #000000
-$color__white: #ffffff;//default #ffffff
-$color__blue: #00538a;//default #00538a
-$color__red: #a3041f;//default #a3041f
+$color__black: #0D0221;//default #0D0221
+$color__white: rgba(250,250,250,.85);//default #ffffff
+$color__blue: #0F084B;//default #0F084B
+$color__red: #A3041F;//default #A3041F
+$color__green: #64C970;//default #64C970
 
 // FONT FAMILIES
 $font__body-font: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;//default -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif
@@ -43,15 +45,15 @@ $horizontal__padding: 5%;//default 5%
 // SINGLE VERTICAL PADDING
 // This setting is set as the top and bottom padding in a class .single-vertical-padding
 // By default this class is set to site-branding
-$padding__single: 20px;//default 20px
+$padding__single: 10px;//default 20px
 
 // DOUBLE VERTICAL PADDING
 // This setting is set as the top and bottom padding in a class .double-vertical-padding
 // By default this class is set to site-footer
-$padding__double: 40px;//default 40px
+$padding__double: 20px;//default 40px
 
 // VERTICAL MARGIN
 // This setting is set as the bottom margin in a class .vertical-margin
 // By default this class is set to site-header, site-content & post
-$vertical__mobile-bottom-margin: 40px;//default 40px
-$vertical__desktop-bottom-margin: 80px;//default 80px
+$vertical__mobile-bottom-margin: 20px;//default 40px
+$vertical__desktop-bottom-margin: 30px;//default 80px

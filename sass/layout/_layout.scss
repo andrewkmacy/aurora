@@ -2,9 +2,9 @@
 {
     float: none;
 
-    width: 100%;
-    margin-right: 0;
-    margin-left: 0;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
 
     @include breakpoint(medium)
     {
@@ -132,21 +132,21 @@
 
 .branding-holder
 {
-    overflow: hidden;
+    overflow: visible;
 }
 
 .site-branding
 {
     float: none;
 
-    width: 100%;
+    width: 50%;
     padding-left: 1px;
 
     @include breakpoint(large)
     {
         float: left;
 
-        width: 70%;
+        width: 50%;
     }
 }
 
@@ -175,6 +175,7 @@
 .site-content
 {
     overflow: hidden;
+    margin-top: 100px;
 }
 
 .site-footer

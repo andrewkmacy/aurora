@@ -29,6 +29,11 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'aurora' ); ?></a>
 
 	<!-- See /sass/0.variables/_options.scss for details on the classes horizontal-padding and vertical margin -->
+<div class="main-header">
+	
+	<div class="custom-header-media">
+		<?php the_custom_header_markup(); ?>
+	
 	<header id="masthead" class="site-header horizontal-padding vertical-margin" role="banner">
 
 		<div class="branding-holder">
@@ -51,34 +56,28 @@
 					<p class="site-description"><?php echo wp_kses_post( $aurora_description ); ?></p>
 				<?php endif; ?>
 			</div><!-- .site-branding -->
-
-			<div class="top-search">
-				<?php get_search_form(); ?>
-			</div>
+		
+			<?php if ( has_nav_menu( 'primary' ) ) { ?>
+				<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'aurora' ); ?>">
+					<div class="toggle-holder">
+						<button class="menu-toggle"><?php esc_html_e( 'Primary Menu', 'aurora' ); ?></button>
+					</div><!-- .toggle-holder -->
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'primary',
+							'menu_id'        => 'primary-menu',
+						)
+					);
+					?>
+				</nav><!-- .main-navigation -->
+			<?php } ?>
 
 		</div><!-- .branding-holder -->
 
-		<div class="custom-header-media">
-			<?php the_custom_header_markup(); ?>
-		</div>
-
-		<?php if ( has_nav_menu( 'primary' ) ) { ?>
-			<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'aurora' ); ?>">
-				<div class="toggle-holder">
-					<button class="menu-toggle"><?php esc_html_e( 'Primary Menu', 'aurora' ); ?></button>
-				</div><!-- .toggle-holder -->
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'primary',
-						'menu_id'        => 'primary-menu',
-					)
-				);
-				?>
-			</nav><!-- .main-navigation -->
-		<?php } ?>
-
-	</header><!-- .site-header -->
-
+		
+		</header><!-- .site-header -->
+	</div>
+</div>
 	<!-- See /sass/0.variables/_options.scss for details on the classes horizontal-padding and vertical-margin-->
 	<div id="content" class="site-content horizontal-padding vertical-margin"><!-- closed in footer,php -->

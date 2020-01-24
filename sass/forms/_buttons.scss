@@ -1,3 +1,4 @@
+
 button,
 input[type='button'],
 input[type='reset'],
@@ -66,4 +67,8 @@ input[type='submit']:active
     pointer-events: none;
 
     color: currentColor;
+}
+
+button.search-submit {
+  background-color: $color__green;
 }

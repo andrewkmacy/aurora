@@ -20,8 +20,8 @@ function aurora_custom_header_setup() {
 				'default-image'      => '',
 				'default-text-color' => '000000',
 				'header-text'        => false,
-				'width'              => 1920,
-				'height'             => 500,
+				'width'              => 2650,
+				'height'             => 1200,
 				'flex-height'        => true,
 				'wp-head-callback'   => 'aurora_header_style',
 			)

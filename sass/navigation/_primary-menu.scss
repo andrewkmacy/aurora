@@ -27,11 +27,10 @@
 
 .main-navigation
 {
-    display: block;
-
-    padding: 0;
-
-    background-color: transparent;
+  display: block;
+  float: right;
+  width: 50%;
+  padding-top: 15px;
 }
 
 .main-navigation ul
@@ -44,7 +43,7 @@
     list-style: none;
     list-style-position: inside;
 
-    text-align: left;
+    text-align: right;
 }
 
 .main-navigation ul li
@@ -62,7 +61,7 @@
 {
     display: block;
 
-    text-decoration: underline;
+    text-decoration: none;
     letter-spacing: 1px;
 }
 
@@ -144,7 +143,7 @@ ul ul ul a
 
         list-style: none;
 
-        text-align: left;
+        text-align: right;
     }
 
     .main-navigation ul ul a,

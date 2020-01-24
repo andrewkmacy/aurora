@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Full Width
+ * Template Name: No Title
  *
  * This template will show the relevant page as full-width
  * even if left or right sidebars have been selected in the Customizer.
@@ -21,7 +21,7 @@ get_header();?>
 			while ( have_posts() ) :
 				the_post();
 
-				get_template_part( 'template-parts/content', 'page' );
+				get_template_part( 'template-parts/content', 'page-no-title' );
 
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
