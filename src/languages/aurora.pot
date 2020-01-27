@@ -54,7 +54,7 @@ msgid "Add Search Form to Header"
 msgstr ""
 
 #. Author of the theme
-msgid "Arnold Goodway"
+msgid ""
 msgstr ""
 
 #: inc/template-functions.php:358
@@ -154,7 +154,7 @@ msgid "Full Width Template"
 msgstr ""
 
 #. Author URI of the theme
-msgid "https://arnoldgoodway.com"
+msgid ""
 msgstr ""
 
 #: template-parts/content-none.php:44
