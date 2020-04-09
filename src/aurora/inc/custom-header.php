@@ -21,7 +21,7 @@ function aurora_custom_header_setup() {
 				'default-text-color' => '000000',
 				'header-text'        => false,
 				'width'              => 2650,
-				'height'             => 1200,
+				'height'             => 600,
 				'flex-height'        => true,
 				'wp-head-callback'   => 'aurora_header_style',
 			)
