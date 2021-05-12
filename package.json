@@ -29,7 +29,7 @@
     "browser-sync": "^2.26.7",
     "gulp-uglify": "^3.0.2",
     "imagesloaded": "^4.1.4",
-    "swiper": "^5.3.6",
+    "swiper": "^6.5.1",
     "swiper.js": "^1.0.0",
     "uglify": "^0.1.5",
     "wow": "0.0.6"
